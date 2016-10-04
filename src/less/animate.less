@@ -1,0 +1,13 @@
+/** 右进左出 **/
+.slide-right-enter-active, .slide-right-leave-active {
+  transition: all .5s ease;
+  .container {
+    transition: all .5s ease;
+  }
+}
+.slide-right-enter, .slide-right-leave-active {
+  .container {
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+  }
+}

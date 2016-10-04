@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import List from 'components/list'
+import List from 'components/list/list'
 import headline from 'components/headline'
 
 export default {

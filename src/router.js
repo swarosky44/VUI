@@ -10,7 +10,9 @@ const router = new VueRouter({
     { path: '/title', name: 'title', component: require('page/headline') },
     { path: '/btn', name: 'button', component: require('page/btn') },
     { path: '/form', name: 'form', component: require('page/form') },
-    { path: '/search', name: 'search', component: require('page/search') }
+    { path: '/search', name: 'search', component: require('page/search') },
+    { path: '/list', name: 'list', component: require('page/list/list') },
+    { path: '/view', name: 'view', component: require('page/list/viewList') }
   ]
 })
 

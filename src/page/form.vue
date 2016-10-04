@@ -21,16 +21,52 @@ export default {
       username: '',
       password: '',
       dataSource: [
-        {name: 'username', type: 'text', cnName: '用户名', icon: ['icon', 'icon-form-name']},
-        {name: 'email', type: 'email', cnName: '邮箱', icon: ['icon', 'icon-form-email']},
-        {name: 'password', type: 'password', cnName: '密码', icon: ['icon', 'icon-form-password']},
-        {name: 'gender', type: 'select', cnName: '性别', icon: ['icon', 'icon-form-gender'], selectOptions: [
-          {name: 'Male', value: 'male'},
-          {name: 'Female', value: 'female'}
-        ]},
-        {name: 'birthday', type: 'date', cnName: '生日日期', icon: ['icon', 'icon-form-calendar']},
-        {name: 'switch', type: 'checkbox', cnName: '开关', icon: ['icon', 'icon-form-toggle']},
-        {name: 'textarea', type: 'textarea', cnName: '文本域', icon: ['icon', 'icon-form-comment']}
+        {
+          name: 'username',
+          type: 'text',
+          cnName: '用户名',
+          icon: ['icon', 'icon-form-name']
+        },
+        {
+          name: 'email',
+          type: 'email',
+          cnName: '邮箱',
+          icon: ['icon', 'icon-form-email']
+        },
+        {
+          name: 'password',
+          type: 'password',
+          cnName: '密码',
+          icon: ['icon', 'icon-form-password']
+        },
+        {
+          name: 'gender',
+          type: 'select',
+          cnName: '性别',
+          icon: ['icon', 'icon-form-gender'],
+          selectOptions: [
+            {name: 'Male', value: 'male'},
+            {name: 'Female', value: 'female'}
+          ]
+        },
+        {
+          name: 'birthday',
+          type: 'date',
+          cnName: '生日日期',
+          icon: ['icon', 'icon-form-calendar']
+        },
+        {
+          name: 'switch',
+          type: 'checkbox',
+          cnName: '开关',
+          icon: ['icon', 'icon-form-toggle']
+        },
+        {
+          name: 'textarea',
+          type: 'textarea',
+          cnName: '文本域',
+          icon: ['icon', 'icon-form-comment']
+        }
       ]
     }
   },

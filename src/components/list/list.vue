@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../less/style.less';
+@import '../../less/style.less';
 .list-wrap {
   height: 100%;
   background: #fff;

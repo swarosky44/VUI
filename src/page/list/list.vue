@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headline :isLeftBackIcon="true">
+    <headline :isLeftBackIcon="true" :leftTriggerEvent="goBack">
       列表
     </headline>
     <div class="container">
@@ -31,6 +31,9 @@ export default {
   methods: {
     triggerEvents (event, item) {
       window.router.push({ name: item.url })
+    },
+    goBack () {
+      window.history.back()
     }
   },
   components: {
@@ -39,6 +42,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less" scoped>
-</style>

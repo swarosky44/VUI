@@ -6,13 +6,13 @@
           {{ item.name }}
         </span>
         <a class="item-right" href="javascript:void(0);">
-          <i class="icon icon-right" v-if="isBackIcon"></i>
           <i class="mark" v-if="isMarkIcon">
             {{ item.mark }}
           </i>
-          <i class="custom" v-if="isCustomIcon">
+          <span class="custom" v-if="isCustomIcon">
             <slot name="custom"></slot>
-          </i>
+          </span>
+          <i class="icon icon-right" v-if="isBackIcon"></i>
         </a>
       </li>
     </transition-group>
@@ -88,6 +88,17 @@ export default {
         right: .5rem;
         height: 100%;
         line-height: 2.2rem;
+        .mark {
+          padding: .1rem .45rem .15rem;
+          font-size: .6rem;
+          line-height: 1;
+          color: @font-light;
+          border-radius: 5rem;
+          background: @bg-gray;
+        }
+        .custom {
+          color: @font-light;
+        }
         .icon {
           color: @font-light;
         }
